@@ -1,0 +1,8 @@
+C:\Users\rabindra.dahal\source\repos\DapperDao\DapperDao\bin\Debug\netcoreapp2.2\DapperDao.deps.json
+C:\Users\rabindra.dahal\source\repos\DapperDao\DapperDao\bin\Debug\netcoreapp2.2\DapperDao.runtimeconfig.json
+C:\Users\rabindra.dahal\source\repos\DapperDao\DapperDao\bin\Debug\netcoreapp2.2\DapperDao.runtimeconfig.dev.json
+C:\Users\rabindra.dahal\source\repos\DapperDao\DapperDao\bin\Debug\netcoreapp2.2\DapperDao.dll
+C:\Users\rabindra.dahal\source\repos\DapperDao\DapperDao\obj\Debug\netcoreapp2.2\DapperDao.csprojAssemblyReference.cache
+C:\Users\rabindra.dahal\source\repos\DapperDao\DapperDao\obj\Debug\netcoreapp2.2\DapperDao.csproj.CoreCompileInputs.cache
+C:\Users\rabindra.dahal\source\repos\DapperDao\DapperDao\obj\Debug\netcoreapp2.2\DapperDao.AssemblyInfoInputs.cache
+C:\Users\rabindra.dahal\source\repos\DapperDao\DapperDao\obj\Debug\netcoreapp2.2\DapperDao.AssemblyInfo.cs
