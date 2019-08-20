@@ -1,7 +1,11 @@
 ﻿using Microsoft.Extensions.Configuration;
+using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Data.Common;
+using System.Data.SqlClient;
 using System.IO;
+using System.Linq;
 
 namespace DapperDao
 {
@@ -15,10 +19,18 @@ namespace DapperDao
         {
             get
             {
-                var factory = DbProviderFactories.GetFactory("System.Data.SqlClient");
+                DbProviderFactories.RegisterFactory("System.Data.SqlClient", SqlClientFactory.Instance);
+                // Get the provider invariant names
+                IEnumerable<string> invariants = DbProviderFactories.GetProviderInvariantNames(); // => 1 result; 'System.Data.SqlClient'
+
+                // Get a factory using that name
+                DbProviderFactory factory = DbProviderFactories.GetFactory(invariants.FirstOrDefault());
+
+                // Create a connection and set the connection string
                 var conn = factory.CreateConnection();
                 conn.ConnectionString = connectionString;
-                conn.Open();
+                try { conn.Open(); } catch (Exception ex) { }
+                
                 return conn;
             }
             
@@ -26,12 +38,15 @@ namespace DapperDao
 
         private static  string GetConnectionString()
         {
-            var builder = new ConfigurationBuilder()
-                                   .SetBasePath(Directory.GetCurrentDirectory())
-                                   .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
+            //var builder = new ConfigurationBuilder()
+            //                       .SetBasePath(Directory.GetCurrentDirectory())
+            //                       .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
 
-            IConfigurationRoot configuration = builder.Build();
-            return configuration.GetConnectionString("DefaultConnection");
+            //IConfigurationRoot configuration = builder.Build();
+            //var result= configuration.GetConnectionString("DefaultConnection");
+
+            //return result;
+            return "Server=STPL-PC-GME;User Id=sa;Password=sasa;Database=TodoItemsDB03;";
 
         }
 

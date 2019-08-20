@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rabindra.dahal\\source\\repos\\DapperDao\\DapperDao\\DapperDao.csproj": {}
+    "H:\\Study_Proj\\DapperDao\\DapperDao\\DapperDao.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rabindra.dahal\\source\\repos\\DapperDao\\DapperDao\\DapperDao.csproj": {
+    "H:\\Study_Proj\\DapperDao\\DapperDao\\DapperDao.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rabindra.dahal\\source\\repos\\DapperDao\\DapperDao\\DapperDao.csproj",
+        "projectUniqueName": "H:\\Study_Proj\\DapperDao\\DapperDao\\DapperDao.csproj",
         "projectName": "DapperDao",
-        "projectPath": "C:\\Users\\rabindra.dahal\\source\\repos\\DapperDao\\DapperDao\\DapperDao.csproj",
+        "projectPath": "H:\\Study_Proj\\DapperDao\\DapperDao\\DapperDao.csproj",
         "packagesPath": "C:\\Users\\rabindra.dahal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rabindra.dahal\\source\\repos\\DapperDao\\DapperDao\\obj\\",
+        "outputPath": "H:\\Study_Proj\\DapperDao\\DapperDao\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

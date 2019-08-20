@@ -49,11 +49,66 @@ namespace DapperDao
 
         public async Task<GridReader> ReceiveBulkData(string query, DynamicParameters param)
         {
-            var reader = await connectionSetup.GetConnection.QueryMultipleAsync(query, param: param, commandType: CommandType.StoredProcedure);
-            return reader;
+            using (var reader = await connectionSetup.GetConnection.QueryMultipleAsync(query, param: param, commandType: CommandType.StoredProcedure))
+            {
+                return reader;
+            }
+                
         }
 
-        
+        public async Task<IEnumerable<dynamic>> ReceiveTableData(string query, DynamicParameters param)
+        {
+            using (var reader = await connectionSetup.GetConnection.QueryMultipleAsync(query, param: param, commandType: CommandType.StoredProcedure))
+            {
+                if(reader==null || reader.Read<dynamic>().ToList().Count==0)
+                    return null;
+
+                return reader.Read<dynamic>().ToList();
+            }
+
+        }
+
+        public async Task<dynamic> ReceiveRowData(string query, DynamicParameters param)
+        {
+            using (var reader = await connectionSetup.GetConnection.QueryMultipleAsync(query, param: param, commandType: CommandType.StoredProcedure))
+            {
+                if (reader == null || reader.Read<dynamic>().ToList().Count == 0)
+                    return null;
+                if (reader.Read<dynamic>().Count()==0)
+                    return null;
+
+                return reader.Read<dynamic>().First();
+            }
+
+        }
+
+        public async Task<IEnumerable<Object>> ReceiveTableDataObject(string query, DynamicParameters param)
+        {
+            using (var reader = await connectionSetup.GetConnection.QueryMultipleAsync(query, param: param, commandType: CommandType.StoredProcedure))
+            {
+                if (reader == null || reader.Read<Object>().ToList().Count == 0)
+                    return null;
+
+                return reader.Read<Object>().ToList();
+            }
+
+        }
+
+        public async Task<Object> ReceiveRowDataObject(string query, DynamicParameters param)
+        {
+            using (var reader = await connectionSetup.GetConnection.QueryMultipleAsync(query, param: param, commandType: CommandType.StoredProcedure))
+            {
+                if (reader == null || reader.Read<Object>().ToList().Count == 0)
+                    return null;
+                if (reader.Read<Object>().Count() == 0)
+                    return null;
+
+                return reader.Read<Object>().First();
+            }
+
+        }
+
+
 
 
     }

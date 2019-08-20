@@ -6,3 +6,14 @@ C:\Users\rabindra.dahal\source\repos\DapperDao\DapperDao\obj\Debug\netcoreapp2.2
 C:\Users\rabindra.dahal\source\repos\DapperDao\DapperDao\obj\Debug\netcoreapp2.2\DapperDao.csproj.CoreCompileInputs.cache
 C:\Users\rabindra.dahal\source\repos\DapperDao\DapperDao\obj\Debug\netcoreapp2.2\DapperDao.AssemblyInfoInputs.cache
 C:\Users\rabindra.dahal\source\repos\DapperDao\DapperDao\obj\Debug\netcoreapp2.2\DapperDao.AssemblyInfo.cs
+H:\Study_Proj\DapperDao\DapperDao\bin\Debug\netcoreapp2.2\DapperDao.deps.json
+H:\Study_Proj\DapperDao\DapperDao\bin\Debug\netcoreapp2.2\DapperDao.runtimeconfig.json
+H:\Study_Proj\DapperDao\DapperDao\bin\Debug\netcoreapp2.2\DapperDao.runtimeconfig.dev.json
+H:\Study_Proj\DapperDao\DapperDao\bin\Debug\netcoreapp2.2\DapperDao.dll
+H:\Study_Proj\DapperDao\DapperDao\bin\Debug\netcoreapp2.2\DapperDao.pdb
+H:\Study_Proj\DapperDao\DapperDao\obj\Debug\netcoreapp2.2\DapperDao.csprojAssemblyReference.cache
+H:\Study_Proj\DapperDao\DapperDao\obj\Debug\netcoreapp2.2\DapperDao.csproj.CoreCompileInputs.cache
+H:\Study_Proj\DapperDao\DapperDao\obj\Debug\netcoreapp2.2\DapperDao.AssemblyInfoInputs.cache
+H:\Study_Proj\DapperDao\DapperDao\obj\Debug\netcoreapp2.2\DapperDao.AssemblyInfo.cs
+H:\Study_Proj\DapperDao\DapperDao\obj\Debug\netcoreapp2.2\DapperDao.dll
+H:\Study_Proj\DapperDao\DapperDao\obj\Debug\netcoreapp2.2\DapperDao.pdb
